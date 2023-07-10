@@ -7,7 +7,7 @@ const app = express();
 app.use(cors({ origin: "*" }));
 const key = "secret";
 app.use(express.json());
-
+//note
 const cards = [
   {
     _id: "eafeswfwr2326346tf3254f",
