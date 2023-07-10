@@ -68,11 +68,12 @@ export default function useUsers() {
           email: normalizedUser.email,
           password: normalizedUser.password,
         });
+        snack("success", "The user has been successfully created");
       } catch (error) {
         requestStatus(false, error, null);
       }
     },
-    [handleLogin, requestStatus]
+    [handleLogin, requestStatus, snack]
   );
 
   const handleGetUser = useCallback(async () => {
@@ -100,7 +101,7 @@ export default function useUsers() {
         requestStatus(false, error, null);
       }
     },
-    [navigate, requestStatus, handleLogin]
+    [navigate, requestStatus, handleLogin, snack]
   );
 
   const valueU = useMemo(() => {

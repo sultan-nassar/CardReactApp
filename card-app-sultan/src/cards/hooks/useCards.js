@@ -101,7 +101,7 @@ export default function useCards() {
         setLoading(true);
         const card = await editCard(cardId, cardFromClient);
         requestStatus(false, null, null, card);
-        setTimeout(() => navigate(ROUTES.CARDS), 1800);
+        navigate(ROUTES.CARDS);
         snack("success", "The business card has been successfully updated");
       } catch (error) {
         requestStatus(false, error, null);
@@ -146,7 +146,7 @@ export default function useCards() {
         const card = await createCard(normalizedCard);
         requestStatus(false, null, null, card);
         snack("success", "A new business card has been created");
-        setTimeout(() => navigate(ROUTES.CARDS), 1800);
+        navigate(ROUTES.CARDS);
       } catch (error) {
         requestStatus(false, error, null);
       }
