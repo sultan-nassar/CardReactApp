@@ -55,12 +55,11 @@ export default function useCards() {
       const cards = await getCards();
       setLoading(false);
       setCards(cards);
-      snack("success", "All the cards are here");
     } catch (error) {
       setLoading(false);
       setError(error);
     }
-  }, [snack]);
+  }, []);
   const handleGetMyCards = useCallback(async () => {
     try {
       setLoading(true);
