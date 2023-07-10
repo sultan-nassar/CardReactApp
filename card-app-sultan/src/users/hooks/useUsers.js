@@ -15,6 +15,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import ROUTES from "../../routes/routesModel";
 import normalizeUser from "../helpers/nomalization/normalizeUser";
+import { useSnack } from "../../providers/SnackbarProvider";
 
 export default function useUsers() {
   const [loading, setLoading] = useState(true);
@@ -22,6 +23,7 @@ export default function useUsers() {
   const navigate = useNavigate();
 
   const { setToken, setUser, user } = useUser();
+  const snack = useSnack();
 
   useAxios();
 
@@ -91,7 +93,9 @@ export default function useUsers() {
           password: updatedUser.password,
         });
         setLoading(false);
-        navigate(ROUTES.CARDS);
+        snack("success", "The user has been successfully updated");
+
+        setTimeout(() => navigate(ROUTES.CARDS), 1800);
       } catch (error) {
         requestStatus(false, error, null);
       }
