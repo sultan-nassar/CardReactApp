@@ -19,7 +19,8 @@ This is a simple React project that allows you to create, Edit Delete and displa
    Bash
    <br>
    git clone -b master https://github.com/sultan-nassar/CardAppFinalProject.git <br>
-- <strong>split two terminal</strong>:<br>
+ <strong>split two terminal</strong>:<br>
+ <br>
 <p>
 <strong> at the first terminal</strong> you have to navigate to the server directory by writing: <br>
   Cd CardAppFinalProject <br>
