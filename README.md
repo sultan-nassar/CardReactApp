@@ -18,23 +18,19 @@ b. Open the terminal
    Bash
    git clone -b master https://github.com/sultan-nassar/CardAppFinalProject.git
 2. open two terminal
--at the first terminal you have to navigate to the server directory by writing
-Run Cd CardAppFinalProject
-Press Enter.
-Run Cd server-card-sultan
-Press Enter.
-Run npm i
-Run node app
+**at the first terminal** you have to navigate to the server directory by writing
+**Run Cd CardAppFinalProject
+**Run Cd server-card-sultan
+**Run npm i
+**Run node app
 
 
 
--at the second terminal you have to navigate to the project directory by writing
-Run Cd CardAppFinalProject
-Press Enter.
-Run Cd card-app-sultan
-Press Enter.
-Run npm i
-Run npm start   
+**at the second terminal** you have to navigate to the project directory by writing
+**Run Cd CardAppFinalProject
+**Run Cd card-app-sultan
+**Run npm i
+**Run npm start   
 
 ## Usage   
 
