@@ -44,15 +44,15 @@ This is a simple React project that allows you to create, Edit Delete and displa
 
 ## Usage   
 
-2. Open your web browser and visit `http://localhost:3000` to access the application.
+1. Open your web browser and visit `http://localhost:3000` to access the application.
 
-3. New User? Go to http://localhost:3000/signup and Enter your personal information in the input fields provided to register the website. 
+2. New User? Go to http://localhost:3000/signup and Enter your personal information in the input fields provided to register the website. 
 
-4. Already have a user? Go to http://localhost:3000/login and enter your user and password
+3. Already have a user? Go to http://localhost:3000/login and enter your user and password
 
-5. Now you can create your new business card and manage all your cards in easy way.
+4. Now you can create your new business card and manage all your cards in easy way.
 
-6. you can also login with the defaults user details from the API: 
+5. you can also login with the defaults user details from the API: 
    email: "admin@admin.com"
    password: "Abc123!"
 
