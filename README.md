@@ -18,8 +18,8 @@ b. Open the terminal <br>
    Bash
    <br>
    git clone -b master https://github.com/sultan-nassar/CardAppFinalProject.git <br>
-**- split two terminal:<br>
--at the first terminal you have to navigate to the server directory by writing<br>
+- **split two terminal**:<br>
+-**at the first terminal** you have to navigate to the server directory by writing<br>
   Cd CardAppFinalProject <br>
   Cd server-card-sultan <br>
   npm i <br>
