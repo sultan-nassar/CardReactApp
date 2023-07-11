@@ -14,8 +14,8 @@ This is a simple React project that allows you to create, Edit Delete and displa
 <p>
 1. install git on your computer from the link https://git-scm.com/downloads <br>
 2.  Clone the repository to your local machine: <br>
-a. Open a new VS code in a new folder <br>
-b. Open the terminal <br>
+<p> Open a new VS code in a new folder <br>  </p> 
+<p> Open the terminal <br>  </p> 
    Bash
    <br>
    git clone -b master https://github.com/sultan-nassar/CardAppFinalProject.git <br>
