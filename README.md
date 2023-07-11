@@ -19,7 +19,7 @@ b. Open the terminal <br>
    Bash
    <br>
    git clone -b master https://github.com/sultan-nassar/CardAppFinalProject.git <br>
-- **split two terminal**:<br>
+- <strong>split two terminal</strong>:<br>
 <p>
 <strong> at the first terminal</strong> you have to navigate to the server directory by writing: <br>
   Cd CardAppFinalProject <br>
