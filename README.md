@@ -17,7 +17,7 @@ a. Open a new VS code in a new folder
 b. Open the terminal 
    Bash
    git clone -b master https://github.com/sultan-nassar/CardAppFinalProject.git
-c. open two terminal:
+c. open two terminal:<br>
 d. **at the first terminal** you have to navigate to the server directory by writing
 **Run Cd CardAppFinalProject
 **Run Cd server-card-sultan
