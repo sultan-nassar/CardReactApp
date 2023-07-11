@@ -11,7 +11,7 @@ This is a simple React project that allows you to create, Edit Delete and displa
 - Search Bar to find the Business you're looking for by its biz number or name.
 
 ## Installation
-
+<p>
 1. install git on your computer from the link https://git-scm.com/downloads <br>
 2.  Clone the repository to your local machine: <br>
 a. Open a new VS code in a new folder <br>
@@ -36,6 +36,9 @@ b. Open the terminal <br>
  npm start <br>  
    
 </p>
+   
+</p>
+
 
 
 ## Usage   
