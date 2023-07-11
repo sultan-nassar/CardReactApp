@@ -17,8 +17,8 @@ a. Open a new VS code in a new folder
 b. Open the terminal 
    Bash
    git clone -b master https://github.com/sultan-nassar/CardAppFinalProject.git
-2. open two terminal
-**at the first terminal** you have to navigate to the server directory by writing
+c. open two terminal:
+d. **at the first terminal** you have to navigate to the server directory by writing
 **Run Cd CardAppFinalProject
 **Run Cd server-card-sultan
 **Run npm i
@@ -26,7 +26,7 @@ b. Open the terminal
 
 
 
-**at the second terminal** you have to navigate to the project directory by writing
+e.**at the second terminal** you have to navigate to the project directory by writing
 **Run Cd CardAppFinalProject
 **Run Cd card-app-sultan
 **Run npm i
