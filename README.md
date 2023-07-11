@@ -19,17 +19,23 @@ b. Open the terminal <br>
    <br>
    git clone -b master https://github.com/sultan-nassar/CardAppFinalProject.git <br>
 - **split two terminal**:<br>
+<p>
 <strong> at the first terminal</strong> you have to navigate to the server directory by writing<br>
   Cd CardAppFinalProject <br>
   Cd server-card-sultan <br>
   npm i <br>
   node app <br>
 <br>
-<h1><strong> at the second terminal</strong></h1> you have to navigate to the project directory by writing <br>
+</p>
+<p>
+<strong> at the second terminal</strong> you have to navigate to the project directory by writing <br>
  Cd CardAppFinalProject <br>
  Cd card-app-sultan <br>
  npm i <br>
  npm start <br>  
+   
+</p>
+
 
 ## Usage   
 
