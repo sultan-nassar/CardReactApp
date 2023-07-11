@@ -21,17 +21,23 @@ b. Open the terminal <br>
 - split two terminal:<br>
  **at the first terminal** you have to navigate to the server directory by writing<br>
  Cd CardAppFinalProject <br>
+ then..
  Cd server-card-sultan <br>
+ then..
  npm i <br>
+ then..
  node app <br>
 
 <br>
 <br>
-e.**at the second terminal** you have to navigate to the project directory by writing <br>
-**Run Cd CardAppFinalProject<br>
+**at the second terminal** you have to navigate to the project directory by writing <br>
+Cd CardAppFinalProject <br>
+ then..
 **Run Cd card-app-sultan <br>
-**Run npm i <br>
-**Run npm start <br>  
+ then..
+npm i <br>
+ then..
+npm start <br>  
 
 ## Usage   
 
