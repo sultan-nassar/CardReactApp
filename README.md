@@ -25,7 +25,7 @@ b. Open the terminal <br>
   npm i <br>
   node app <br>
 <br>
-<strong> at the second terminal</strong> you have to navigate to the project directory by writing <br>
+<h1><strong> at the second terminal</strong></h1> you have to navigate to the project directory by writing <br>
  Cd CardAppFinalProject <br>
  Cd card-app-sultan <br>
  npm i <br>
