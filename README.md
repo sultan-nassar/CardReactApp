@@ -12,18 +12,18 @@ This is a simple React project that allows you to create, Edit Delete and displa
 
 ## Installation
 
-1. Clone the repository to your local machine:
-a. Open a new VS code in a new folder
-b. Open the terminal 
+1. Clone the repository to your local machine: <br>
+a. Open a new VS code in a new folder <br>
+b. Open the terminal <br>
    Bash
    <br>
-   git clone -b master https://github.com/sultan-nassar/CardAppFinalProject.git
-c. open two terminal:<br>
-d. **at the first terminal** you have to navigate to the server directory by writing<br>
-**Run Cd CardAppFinalProject <br>
-**Run Cd server-card-sultan<br>
-**Run npm i <br>
-**Run node app <br>
+   git clone -b master https://github.com/sultan-nassar/CardAppFinalProject.git <br>
+- split two terminal:<br>
+- **at the first terminal** you have to navigate to the server directory by writing<br>
+-Run Cd CardAppFinalProject <br>
+-Run Cd server-card-sultan <br>
+-Run npm i <br>
+-Run node app <br>
 
 <br>
 <br>
