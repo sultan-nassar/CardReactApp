@@ -61,7 +61,7 @@ export default function CardDetailsPage() {
               >
                 <Avatar
                   sx={{ height: "200px", width: "200px", marginBottom: 1 }}
-                  src={"/" + card.image.url}
+                  src={card.image.url}
                   alt={card.image.alt}
                 />
               </Container>

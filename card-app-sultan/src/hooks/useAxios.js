@@ -9,7 +9,7 @@ export default function useAxios() {
   const { token } = useUser(); //1
 
   useEffect(() => {
-    axios.defaults.headers.common["x-auth-token"] = token; //2
+    axios.defaults.headers.common["Authorization"] = "Bearer " + token; //2
     const requestInterceptor = axios.interceptors.request.use((data) => {
       console.log("this log came from interceptor request");
       return Promise.resolve(data);

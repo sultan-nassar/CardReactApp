@@ -14,10 +14,10 @@ export default function Profile() {
   const [userData, setUser] = useState();
   const { user } = useUser();
   useEffect(() => {
-    const getUserData = async () => {
-      setUser(await handleGetUser());
+    const getUserData = async (user_id) => {
+      setUser(await handleGetUser(user_id));
     };
-    getUserData();
+    getUserData(user.id);
   }, [handleGetUser]);
 
   const { isDark } = useTheme();

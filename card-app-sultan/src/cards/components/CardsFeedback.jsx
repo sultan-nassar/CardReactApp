@@ -27,7 +27,6 @@ export default function CardsFeedback({
 }
 CardsFeedback.propTypes = {
   isloading: bool,
-  error: object,
   cards: arrayOf(object),
   handleDelete: func,
   onLike: func,

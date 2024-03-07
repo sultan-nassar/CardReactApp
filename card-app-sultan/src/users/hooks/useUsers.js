@@ -76,23 +76,23 @@ export default function useUsers() {
     [handleLogin, requestStatus, snack]
   );
 
-  const handleGetUser = useCallback(async () => {
-    try {
-      const user = await getUserData();
-      return user;
-    } catch (error) {
-      requestStatus(false, error, null);
-    }
-  }, [requestStatus]);
+  const handleGetUser = useCallback(
+    async (user_id) => {
+      try {
+        const user = await getUserData(user_id);
+        return user;
+      } catch (error) {
+        requestStatus(false, error, null);
+      }
+    },
+    [requestStatus]
+  );
 
   const handleUpdateUser = useCallback(
-    async (user_id, UserFromClient) => {
+    async (user_id, normalizedUser) => {
       try {
-        const updatedUser = await editUser(user_id, UserFromClient);
-        await handleLogin({
-          email: updatedUser.email,
-          password: updatedUser.password,
-        });
+        await editUser(user_id, normalizedUser);
+
         setLoading(false);
         snack("success", "The user has been successfully updated");
 

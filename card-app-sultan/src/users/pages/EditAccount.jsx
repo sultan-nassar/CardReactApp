@@ -6,6 +6,7 @@ import { Container } from "@mui/material";
 import mapUserToModel from "../helpers/nomalization/mapUserToModel";
 import editUserSchema from "../models/joi-schema/EditUserSchema";
 import normalizeEditUser from "../helpers/nomalization/normalizeEditUser";
+
 import EditUserForm from "../components/EditUserForm";
 import initialEditUserForm from "../helpers/initialForms/initialEditUserForm";
 import { Navigate } from "react-router-dom";
@@ -22,14 +23,18 @@ export default function EditAccount() {
     initialEditUserForm,
     editUserSchema,
     () => {
+      console.log(user.id);
+
       handleUpdateUser(user.id, {
         ...normalizeEditUser({ ...value.data }),
+        password: "",
       });
     }
   );
 
   useEffect(() => {
     handleGetUser(user.id).then((data) => {
+      console.log(user.id);
       const modelUser = mapUserToModel(data);
       rest.setData(modelUser);
     });

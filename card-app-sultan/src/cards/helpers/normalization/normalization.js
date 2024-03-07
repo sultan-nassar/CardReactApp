@@ -1,4 +1,10 @@
+const generateBizNumber = () => {
+  return Math.floor(Math.random() * 10_000_000);
+};
+
 const normalizeCard = (card) => {
+  const bizNumber = card.bizNumber || generateBizNumber();
+
   return {
     title: card.title,
     subtitle: card.subtitle,
@@ -21,8 +27,12 @@ const normalizeCard = (card) => {
       zip: card.zip ? Number(card.zip) : card.zip,
     },
     likes: [],
-    user_id: card.user_id,
+    User_Id: card.user_Id,
+    bizNumber: bizNumber,
   };
 };
 
 export default normalizeCard;
+
+// BizNumber: card.bizNumber,
+// User_id: card.user_Id,

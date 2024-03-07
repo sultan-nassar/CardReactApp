@@ -142,7 +142,7 @@ export default function useCards() {
       try {
         setLoading(true);
         const normalizedCard = normalizeCard(cardFromClient);
-        normalizedCard.user_id = user.id;
+        normalizedCard.User_Id = user.id;
         const card = await createCard(normalizedCard);
         requestStatus(false, null, null, card);
         snack("success", "A new business card has been created");

@@ -26,11 +26,16 @@ export default function EditCardPage() {
   const { user } = useUser();
   //useForm (initialForm,schema,onSubmit)
   const { value, ...rest } = useForm(initialCardForm, cardSchema, () => {
+    console.log(card._id);
+    console.log(card.bizNumber);
+    console.log(user.id);
+    console.log(card.user_Id);
+
     handleUpdateCard(card._id, {
       ...normalizeCard({ ...value.data }),
 
-      bizNumber: card.bizNumber,
-      user_id: card.user_id,
+      BizNumber: card.bizNumber,
+      User_id: card.user_Id,
     });
   });
   //useEffect - update the form data to this card data

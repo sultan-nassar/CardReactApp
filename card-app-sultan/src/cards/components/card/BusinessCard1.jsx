@@ -34,7 +34,7 @@ export default function BusinessCard1({
         </CardActionArea>
         <CardActionBar
           id={card._id}
-          user_id={card.user_id}
+          user_id={card.user_Id}
           handleDelete={handleDelete}
           onLike={onLike}
           handleEdit={handleEdit}
