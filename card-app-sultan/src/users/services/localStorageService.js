@@ -11,7 +11,11 @@ export const getToken = () => localStorage.getItem(TOKEN);
 export const getUser = () => {
   try {
     const myToken = localStorage.getItem(TOKEN);
-    return jwtDecode(myToken);
+    const userDetails=jwtDecode(myToken)
+    userDetails.isBusiness=userDetails.isBusiness==="true"
+    userDetails.isAdmin=userDetails.isAdmin==="true"
+
+    return userDetails
   } catch (error) {
     return null;
   }
