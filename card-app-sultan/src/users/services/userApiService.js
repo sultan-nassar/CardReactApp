@@ -2,7 +2,7 @@ import axios from "axios";
 
 const apiUrl =
   process.env.REACT_APP_API_URL ||
-  "https://dotnetcardsserver20240307184945.azurewebsites.net/api";
+  "https://localhost:7079/api";
 // "https://localhost:7079/api";
 
 export const login = async (user) => {
