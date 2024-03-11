@@ -25,7 +25,7 @@ export default function EditCardPage() {
   //user - useUser (provider)
   const { user } = useUser();
   //useForm (initialForm,schema,onSubmit)
-  const { value, ...rest } = useForm(initialCardForm, cardSchema, () => {
+  const { value, setData,...rest } = useForm(initialCardForm, cardSchema, () => {
     console.log(card._id);
     console.log(card.bizNumber);
     console.log(user.id);
@@ -42,9 +42,9 @@ export default function EditCardPage() {
   useEffect(() => {
     handleGetCard(id).then((data) => {
       const modelCard = mapCardToModel(data);
-      rest.setData(modelCard);
+      setData(modelCard);
     });
-  }, [handleGetCard, id,rest]);
+  }, [handleGetCard,setData,id]);
 
   if (!user) return <Navigate replace to={ROUTES.CARDS} />;
 
