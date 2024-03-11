@@ -17,6 +17,7 @@ export default function CardActionBar({
   user_id,
   cardLikes,
   onLike,
+  phone,
 }) {
   const { user } = useUser();
 
@@ -63,9 +64,13 @@ export default function CardActionBar({
         </Box>
 
         <Box>
+          <a href={"tel:"+ phone}>
           <IconButton aria-label="Call">
-            <CallIcon />
-          </IconButton>
+                  <CallIcon />
+                </IconButton>
+          </a>
+      
+
           {user && (
             <IconButton
               aria-label="Add to favorite"

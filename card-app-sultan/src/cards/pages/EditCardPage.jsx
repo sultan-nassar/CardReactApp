@@ -44,7 +44,7 @@ export default function EditCardPage() {
       const modelCard = mapCardToModel(data);
       setData(modelCard);
     });
-  }, [handleGetCard,setData,id]);
+  }, [handleGetCard,id,setData]);
 
   if (!user) return <Navigate replace to={ROUTES.CARDS} />;
 

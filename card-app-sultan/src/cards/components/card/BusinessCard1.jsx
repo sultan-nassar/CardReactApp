@@ -39,6 +39,7 @@ export default function BusinessCard1({
           onLike={onLike}
           handleEdit={handleEdit}
           cardLikes={card.likes}
+          phone={card.phone}
         />
       </Card>
     </>
@@ -50,4 +51,5 @@ BusinessCard1.propTypes = {
   handleDelete: func,
   onLike: func,
   handleEdit: func,
+  
 };
