@@ -101,7 +101,7 @@ export default function useUsers() {
         requestStatus(false, error, null);
       }
     },
-    [navigate, requestStatus, handleLogin, snack]
+    [navigate, requestStatus, snack]
   );
 
   const valueU = useMemo(() => {

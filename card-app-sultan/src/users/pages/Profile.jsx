@@ -18,7 +18,7 @@ export default function Profile() {
       setUser(await handleGetUser(user_id));
     };
     getUserData(user.id);
-  }, [handleGetUser]);
+  }, [handleGetUser,user]);
 
   const { isDark } = useTheme();
   if (!user) {

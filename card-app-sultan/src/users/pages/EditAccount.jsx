@@ -19,7 +19,7 @@ export default function EditAccount() {
   //user - useUser (provider)
   const { user } = useUser();
   //useForm (initialForm,schema,onSubmit)
-  const { value, ...rest } = useForm(
+  const { value,setData,...rest } = useForm(
     initialEditUserForm,
     editUserSchema,
     () => {
@@ -36,9 +36,9 @@ export default function EditAccount() {
     handleGetUser(user.id).then((data) => {
       console.log(user.id);
       const modelUser = mapUserToModel(data);
-      rest.setData(modelUser);
+      setData(modelUser);
     });
-  }, []);
+  }, [handleGetUser,user,setData]);
 
   const { isDark } = useTheme();
   if (!user) {

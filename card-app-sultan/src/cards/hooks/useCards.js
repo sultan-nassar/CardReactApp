@@ -151,7 +151,7 @@ export default function useCards() {
         requestStatus(false, error, null);
       }
     },
-    [navigate, snack]
+    [navigate, snack,user]
   );
 
   const value = useMemo(() => {
