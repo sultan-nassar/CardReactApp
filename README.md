@@ -1,4 +1,4 @@
-# Sultan Nassar CardAppFinalProject 
+# Sultan Nassar CardReactApp
 
 This is a simple React project that allows you to create, Edit Delete and display business cards. It provides a user-friendly interface for entering contact information and generates a visually appealing business card layout.
 
@@ -18,7 +18,7 @@ This is a simple React project that allows you to create, Edit Delete and displa
 <p> Open the terminal <br>  </p> 
    Bash
    <br>
-   git clone -b master https://github.com/sultan-nassar/CardAppFinalProject.git <br>
+   git clone -b master https://github.com/sultan-nassar/CardReactApp.git <br>
  <strong>split two terminal</strong>:<br>
  <br>
 <p>
