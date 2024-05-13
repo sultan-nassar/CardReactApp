@@ -22,16 +22,8 @@ This is a simple React project that allows you to create, Edit Delete and displa
  <strong>split two terminal</strong>:<br>
  <br>
 <p>
-<strong> at the first terminal</strong> you have to navigate to the server directory by writing: <br>
-  Cd CardAppFinalProject <br>
-  Cd server-card-sultan <br>
-  npm i <br>
-  node app <br>
-<br>
-</p>
-<p>
 <strong> at the second terminal</strong> you have to navigate to the project directory by writing: <br>
- Cd CardAppFinalProject <br>
+ Cd CardReactApp <br>
  Cd card-app-sultan <br>
  npm i <br>
  npm start <br>  
